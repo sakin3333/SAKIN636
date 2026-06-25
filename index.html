@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <title>Level 15 Digital Marketing Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">L15 <span>Marketer</span></div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Results</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="home" class="hero-section">
+        <div class="hero-content">
+            <h1>I Help Uncompromising Brands Dominate.</h1>
+            <p class="bengali-text">[আপনার ব্র্যান্ডকে পরবর্তী স্তরে নিয়ে যাব]</p>
+            <div class="stats-container">
+                <div class="stat-box">
+                    <h3>10X ROI</h3>
+                    <p>Client Growth</p>
+                </div>
+                <div class="stat-box">
+                    <h3>+1500%</h3>
+                    <p>SEO Traffic</p>
+                </div>
+            </div>
+            <a href="#" target="_blank" class="cta-btn Highlight-btn">
+                <i class="fa-brands fa-fiverr"></i> Launch Project (Fiverr)
+            </a>
+        </div>
+    </section>
+
+    <section id="services" class="services-section">
+        <h2>Level 15 Expertise <span class="bengali-text">(দক্ষতা)</span></h2>
+        <div class="services-grid">
+            <div class="service-card">
+                <i class="fa-solid fa-magnifying-glass-chart"></i>
+                <h3>Soul Search (SEO)</h3>
+                <p>Advanced Technical SEO and Intent-driven optimization.</p>
+            </div>
+            <div class="service-card">
+                <i class="fa-solid fa-bullseye"></i>
+                <h3>Audience Amplification</h3>
+                <p>High-converting Facebook, Instagram, and Google Ads.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio" class="portfolio-section">
+        <h2>Results Arcade</h2>
+        <div class="portfolio-grid">
+            <div class="portfolio-card">
+                <h3>Apex Tech Case Study</h3>
+                <div class="graph-placeholder">
+                    <p>ROI: <strong>23.3% Boost</strong></p>
+                    <div class="bar-chart"><span style="width: 85%;"></span></div>
+                </div>
+            </div>
+            <div class="portfolio-card">
+                <h3>Cosmic Commerce</h3>
+                <div class="graph-placeholder">
+                    <p>Traffic: <strong>+1500% Growth</strong></p>
+                    <div class="bar-chart"><span style="width: 95%;"></span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <h2>Partner With Me</h2>
+        <p class="bengali-text">চলুন আপনার ব্যবসার গ্রোথ নিয়ে আলোচনা করি</p>
+        
+        <form action="#" method="POST" class="secure-form">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="_replyto" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Project Details" required></textarea>
+            <button type="submit" class="submit-btn">Consult Now</button>
+        </form>
+
+        <div class="social-links">
+            <a href="#" target="_blank" class="social-icon fiverr"><i class="fa-brands fa-fiverr"></i></a>
+            <a href="#" target="_blank" class="social-icon facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" target="_blank" class="social-icon twitter"><i class="fa-brands fa-x-twitter"></i></a>
+        </div>
+        <div class="footer-note">
+            <p><i class="fa-solid fa-shield-halved"></i> Netlify Secured | Static Architecture</p>
+        </div>
+    </section>
+
+    <div class="gemini-widget" id="geminiWidget">
+        <div class="gemini-icon" onclick="toggleGeminiChat()">
+            <img src="https://www.gstatic.com/lamda/images/gemini_sparkle_v002-d4723014e75306d9c1999.svg" alt="Gemini">
+            <span>Gemini AI Mode</span>
+        </div>
+        <div class="gemini-chat-box" id="geminiChatBox">
+            <div class="chat-header">
+                <h4>Gemini AI Assistant</h4>
+                <span onclick="toggleGeminiChat()">&times;</span>
+            </div>
+            <div class="chat-body" id="chatBody">
+                <p class="bot-msg">Hi! You can chat with me in any language about Sakin's marketing services. <br><span class="bengali-text">[আপনি সাকিনের মার্কেটিং সার্ভিস সম্পর্কে যেকোনো ভাষায় আমার সাথে চ্যাট করতে পারেন।]</span></p>
+            </div>
+            <div class="chat-footer">
+                <input type="text" id="userInput" placeholder="Ask Gemini...">
+                <button onclick="sendMarketMessage()"><i class="fa-solid fa-paper-plane"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+      </html>
